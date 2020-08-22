@@ -2,7 +2,9 @@
 This library provides an easy to use interface to [Walmart's Partner APIs](https://developer.walmartapis.com/).
 
 ## Installation
-It is easiest to use [Composer](https://getcomposer.org/) to install
+It is easiest to use Composer "https://getcomposer.org/" to install, simply run:
+
+composer require  Sed9yDataBank/Client-Walmart-Lib :^1.0.9
 
 ## Usage Documentation
  See [docs/README.md](docs/README.md)

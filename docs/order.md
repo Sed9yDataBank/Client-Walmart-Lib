@@ -30,10 +30,10 @@ $orders = $client->list([
     'customerOrderId' => '123', // optional
     'purchaseOrderId' => '123', // optional
     'status' => 'Shipped', // optional
-    'createdStartDate' => '2016-06-01', // optional
-    'createdEndDate' => '2016-06-15', // optional
-    'fromExpectedShipDate' => '2016-06-01', // optional
-    'toExpectedShipDate' => '2016-06-15', // optional
+    'createdStartDate' => '2020-08-01', // optional
+    'createdEndDate' => '2020-08-15', // optional
+    'fromExpectedShipDate' => '2020-08-01', // optional
+    'toExpectedShipDate' => '2020-08-15', // optional
     'limit' => 10, // optional, default 10
     'nextCursor' => '', // optional, value comes from previous call, used for pagination
 ]);
@@ -54,7 +54,7 @@ $client = new Order([
 ]);
 
 $orders = $client->listReleased([
-    'createdStartDate' => '2016-06-01', // optional
+    'createdStartDate' => '2020-08-01', // optional
     'limit' => 10, // optional, default 10
     'nextCursor' => '', // optional, value comes from previous call, used for pagination
 ]);
@@ -157,7 +157,7 @@ $order = $client->ship(
                                 'amount' => 1
                             ],
                             'trackingInfo' => [
-                                'shipDateTime' => '2016-06-27T05:30:15Z',
+                                'shipDateTime' => '2020-08-27T05:30:15Z',
                                 'carrierName' => [
                                     'carrier' => 'FedEx'
                                 ],

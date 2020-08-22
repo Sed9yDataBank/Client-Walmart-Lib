@@ -58,8 +58,8 @@ $price = $client->bulk([
                     'priceDisplayCode' => [
                         'submapType' => 'CHECKOUT',
                     ],
-                    'effectiveDate' => '2016-07-02T12:38:43-04:00',
-                    'expirationDate' => '2016-08-02T12:38:43-04:00',
+                    'effectiveDate' => '2020-07-02T12:38:43-04:00',
+                    'expirationDate' => '2020-08-02T12:38:43-04:00',
                 ]
             ],
         ],

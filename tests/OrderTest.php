@@ -58,7 +58,7 @@ class OrderTest extends \PHPUnit_Framework_TestCase
         $client = $this->getClient();
 
         $orders = $client->listReleased([
-            'createdStartDate' => '2016-06-01', //date('Y-m-d', time() - 5184000), // approx 60 days ago
+            'createdStartDate' => '2020-08-01', //date('Y-m-d', time() - 5184000), // approx 60 days ago
             'limit' => 2,
         ]);
         $this->debug($orders);
@@ -72,7 +72,7 @@ class OrderTest extends \PHPUnit_Framework_TestCase
         $client = $this->getClient();
 
         $orders = $client->list([
-            'createdStartDate' => '2016-06-01', //date('Y-m-d', time() - 5184000), // approx 60 days ago
+            'createdStartDate' => '2020-08-01', //date('Y-m-d', time() - 5184000), // approx 60 days ago
             'limit' => 10,
         ]);
         $this->debug($orders);
@@ -166,7 +166,7 @@ class OrderTest extends \PHPUnit_Framework_TestCase
                                     'amount' => 1
                                 ],
                                 'trackingInfo' => [
-                                    'shipDateTime' => '2016-06-27T05:30:15Z',
+                                    'shipDateTime' => '2020-08-27T05:30:15Z',
                                     'carrierName' => [
                                         'carrier' => 'FedEx'
                                     ],
@@ -289,7 +289,7 @@ class OrderTest extends \PHPUnit_Framework_TestCase
         $client = $this->getClient();
         try {
             $response = $client->listReleased([
-                'createdStartDate' => '2016-10-01',
+                'createdStartDate' => '2020-10-01',
                 'limit' => 5,
             ]);
             $this->assertEquals(0, $response['list']['meta']['totalCount']);
@@ -303,7 +303,7 @@ class OrderTest extends \PHPUnit_Framework_TestCase
         $client = $this->getClient();
         try {
             $response = $client->list([
-                'createdStartDate' => '2016-10-01',
+                'createdStartDate' => '2020-10-01',
                 'limit' => 5,
                 'status' => 'Shipped',
             ]);
